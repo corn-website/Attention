@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yes or No Redirect</title>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                let userResponse = confirm("This site contains corn based products. Do you want to proceed?");
+                if (userResponse) {
+                    window.location.href = 'https://sites.google.com/view/cornhubxyz/home'; // Change this to your target URL
+                } else {
+                    location.reload(); // Reloads the page to restart the prompt
+                }
+            }, 500); // Delay for better user experience
+        };
+    </script>
+</head>
+<body>
+    <h2>Welcome to the website</h2>
+</body>
+</html>
